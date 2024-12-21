@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signup - Messaging Website</title>
+</head>
+<body>
+    <header>
+        <img src="../chatify-header-logo.png" alt="Logo" class="logo">
+        <nav class="upperText">
+            <a href="../index.html">Home</a>
+            <a href="../about/index.html">About</a>
+        <a href="../contact/index.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- Left Side: Welcome Message or Benefits -->
+        <div class="benefits">
+            <h1>Join Our Community</h1>
+            <p>Connect with people across the world with seamless, real-time messaging. Create your account to experience:</p>
+            <ul>
+                <li>Instant messaging with loved ones</li>
+                <li>Secure, encrypted conversations</li>
+                <li>Access across multiple devices</li>
+                <li>Customized user experience</li>
+            </ul>
+        </div>
+
+        <!-- Right Side: Signup Form -->
+        <form id="signup-form" class="signupForm">
+            <h1>Sign Up</h1>
+            <div class="formGroup">
+                <input type="text" placeholder="Username" id="username">
+            </div>
+            <div class="formGroup">
+                <input type="email" placeholder="Email" id="email" required>
+            </div>
+            <div class="formGroup">
+                <input type="password" placeholder="Password" id="password" required>
+            </div>
+            <div class="formGroup">
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <button id="signup-button" type="submit">Create Account</button>
+            <div id="error-message"></div> <!-- This will display the error messages -->
+  
+            <p>Already have an account? <a href="../index.html">Log in</a></p>
+        </form>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    
+
+</body>
+</html>

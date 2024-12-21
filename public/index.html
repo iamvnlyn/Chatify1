@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+
+    <header>
+      <img src="chatify-header-logo.png" alt="Logo" class="logo">
+      <nav class="upperText">
+          <a href="index.html">Home</a>
+          <a href="about/index.html">About</a>
+      <a href="contact/index.html">Contact</a>
+      </nav>
+  </header>
+
+   
+      <h1>Welcome to Chatify</h1>
+  
+
+    <div class="main-content">
+      <!-- Login Form -->
+      <form method="POST" class="loginForm">
+        <h1>Login</h1>
+        <div class="formGroup">
+          <input type="text" id="email" placeholder="Email" required />
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+        <button id="login-button" type="submit">Log In</button>
+        <div class="forgotpass">
+          <a href="#" id="forgot-password">Forgot password?</a>
+        </div>
+        <p>Don't have an account? <a href="signuppage/index.html">Sign up</a></p>
+      </form>
+    </div>
+
+    <!-- Loading spinner -->
+    <div id="spinner" style="display: none;">Loading...</div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Match for the 'chatRooms' collection, where we store both personal and group chats
+    match /chatRooms/{roomId} {
+      
+      // Only authenticated users can read/write messages in the room
+      allow read, write: if request.auth != null && isParticipant(roomId, request.auth.uid);
+
+      // Match for messages in the 'chatRooms' collection
+      match /messages/{messageId} {
+        // Only allow writing if the user is a participant of the chat room
+        allow write: if request.auth != null && isParticipant(resource.data.roomId, request.auth.uid);
+
+        // Allow reading only if the user is a participant in the chat room
+        allow read: if request.auth != null && isParticipant(resource.data.roomId, request.auth.uid);
+      }
+    }
+  }
+
+  // Helper function to check if the user is a participant in the chat room
+  function isParticipant(roomId, userId) {
+    return get(/databases/$(database)/documents/chatRooms/$(roomId)).data.participants[userId] == true;
+  }
+}
