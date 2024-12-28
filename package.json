@@ -1,9 +1,16 @@
 {
   "dependencies": {
-    "firebase": "^11.1.0"
+    "firebase": "^11.1.0",
+    "react-scripts": "^3.0.1"
   },
   "devDependencies": {
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   }
 }
