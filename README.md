@@ -23,8 +23,8 @@ Make sure you have the following installed:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/messaging-web-app.git
-   cd messaging-web-app
+   git clone https:https://github.com/iamvnlyn/Chatify1
+   cd C:\Users\JOHN PAUL G. GALIT\OneDrive\Desktop\WS101 LAB4- Galit\Documents\KEEP\Chatify
 
 2. Install dependencies:
 bash
