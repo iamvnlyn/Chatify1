@@ -9,7 +9,7 @@ A simple and user-friendly messaging web application built with **Firebase**, **
 - Secure data storage using Firebase Firestore.
 
 ## 🚀 Demo
-[Live Demo Link](#) (Replace `#` with your app’s live URL)
+[Live Demo Link] https://chatify-web-app.web.app
 
 ## 🛠️ Getting Started
 
